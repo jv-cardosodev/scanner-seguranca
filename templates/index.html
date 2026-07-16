@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+Scanner Segurança
+</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>
+🛡️ Scanner Segurança
+</h1>
+
+
+<p>
+Python Network Security Tool
+</p>
+
+
+<form method="POST">
+
+<input 
+name="alvo"
+placeholder="Digite IP ou domínio"
+required
+>
+
+
+<button>
+INICIAR SCAN
+</button>
+
+
+</form>
+
+
+
+{% if resultado %}
+
+<div class="resultado">
+
+<h2>
+Resultado
+</h2>
+
+
+<p>
+Portas encontradas:
+</p>
+
+
+{% for porta in resultado %}
+
+<div class="porta">
+
+✅ Porta {{ porta }}
+
+</div>
+
+
+{% endfor %}
+
+
+</div>
+
+{% endif %}
+
+
+
+</div>
+
+
+</body>
+
+</html>
