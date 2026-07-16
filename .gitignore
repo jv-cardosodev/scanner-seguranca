@@ -1,9 +1,26 @@
+_# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 
-.env
-
+# Ambiente virtual
 venv/
 .venv/
+env/
 
+# Variáveis de ambiente
+.env
+.env.*
+
+# Configurações do VS Code
 .vscode/
+
+# Relatórios gerados pelo scanner
+reports/*.txt
+
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
